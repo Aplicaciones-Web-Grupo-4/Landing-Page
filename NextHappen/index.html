@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextHappen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="hero">
+      <h1 class="title">NEXTHAPPEN</h1>
+      <div class="logo">
+        <img src="/images/happi_logo.png" alt="Happi logo" height="150px" href="#">
+      </div>
+      <button class="burger-menu-open" id="open">
+        <div></div>
+        <div></div>
+      </button>
+      <nav class="nav" id="nav">
+        <button class="burger-menu-close" id="close">
+          <div></div>
+          <div></div>
+        </button>
+        <ul class="menu">
+          <li><a href="#">NOSOTROS</a></li>
+          <li><a href="#">ACERCA</a></li>
+          <li><a href="#">CARACTERITICAS</a></li>
+          <li><a href="#">ESPAÑOL</a></li>
+          <li><a href="#">INGLES</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-img">
+          <img src="/images/happi.png" alt="Happi" height="700px">
+        </div>
+        <div class="hero-text">
+          <h2 class="slogan">Descubre lo que <br>
+            pasa, vive lo <br>
+            que viene</h2>
+        </div>
+        <div class="hero-info">
+          <p class="info">
+            La forma más divertida de <br>
+            enterarte de ferias y eventos <br>
+            en línea. Todo lo que pasa, <br>
+            en un solo lugar.
+          </p>
+        </div>
+        <div class="register-btn">
+          <a href="#" class="register">REGISTRATE AHORA →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about-us">
+      <h2>NEOVENT</h2>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="card">
+            <h3>MARCO NAKASONE</h3>
+            <div class="card-img">
+              <img src="/images/marco.jpg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Desarrollador fullstack en formación</h4>
+            <p>
+              Curioso y con muchas ganas de aprender. Le gusta participar en todas las etapas del desarrollo y aportar
+              ideas nuevas al equipo.
+            </p>
+          </div>
+          <div class="card">
+            <h3>MARCO NAKASONE</h3>
+            <div class="card-img">
+              <img src="/images/billy.jpg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Desarrollador móvil</h4>
+            <p>
+              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
+              más rápidas, útiles y accesibles.
+            </p>
+          </div>
+          <div class="card">
+            <h3>MARCO NAKASONE</h3>
+            <div class="card-img">
+              <img src="/images/jose.jpg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Desarrollador móvil</h4>
+            <p>
+              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
+              más rápidas, útiles y accesibles.
+            </p>
+          </div>
+          <div class="card">
+            <h3>MARCO NAKASONE</h3>
+            <div class="card-img">
+              <img src="persona2.jpg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Desarrollador móvil</h4>
+            <p>
+              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
+              más rápidas, útiles y accesibles.
+            </p>
+          </div>
+          <div class="card">
+            <h3>MARCO NAKASONE</h3>
+            <div class="card-img">
+              <img src="persona2.jpg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Desarrollador móvil</h4>
+            <p>
+              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
+              más rápidas, útiles y accesibles.
+            </p>
+          </div>
+        </div>
+        <button class="btn prev" onclick="moveMain(-1)"> &#10094;</button>
+        <button class="btn next" onclick="moveMain(1)"> &#10095;</button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-img">
+        <img src="/images/happi.png" alt="Happi" height="700px">
+      </div>
+      <div class="about-cards">
+        <h3>NUESTRA ESENCIA</h3>
+        <p>NextHappen es el radar esencial que conecta a los limeños con la vibrante escena de ferias y emprendimientos
+          de la ciudad, guiándolos de manera personalizada y cercana a través de Happi, su llama mascota, para que nunca
+          más se pierdan una experiencia gastronómica o artística cerca de ellos.</p>
+        <div class="essence-img">
+          <img src="/images/essence.svg" alt="Esencia" height="300px">
+        </div>
+      </div>
+    </section>
+    <section class="misision-vision">
+      <div class="misision-vision-cards-container">
+
+        <div class="misision-vision-cards">
+          <h3>MISIÓN</h3>
+          <p>Impulsar y visibilizar el ecosistema emprendedor de Lima, facilitando un encuentro significativo entre
+            creadores y comunidad. Buscamos democratizar el acceso a las ferias y mercados de la ciudad, simplificando
+            su
+            descubrimiento a través de tecnología intuitiva y un enfoque humano, para así fortalecer la economía local y
+            enriquecer la vida cultural de todos los limeños.</p>
+          <div class="mission-img">
+            <img src="/images/mission.svg" alt="Esencia" height="300px">
+          </div>
+        </div>
+        <div class="misision-vision-cards">
+          <h3>VISIÓN</h3>
+          <p>Ser la plataforma de referencia y comunidad indispensable que define y conecta la escena de emprendimiento
+            y
+            ferias de Lima, donde cada limeño descubra automáticamente experiencias auténticas a su alrededor y todo
+            emprendedor encuentre su audiencia ideal, consolidando así a NextHappen y a Happi, nuestra llama,
+            como símbolos de conexión, descubrimiento y alegría en la ciudad.</p>
+          <div class="vision-img">
+            <img src="/images/vision.svg" alt="Esencia" height="300px">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="values">
+      <h2>NUESTROS VALORES</h2>
+      <div class="values-cards-container">
+        <div class="values-cards-carousel" id="valuesCarousel">
+          <div class="values-card">
+            <h3>INNOVACIÓN</h3>
+            <div class="values-card-img">
+              <img src="/images/innovation.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Formas creativas de conectarnos con eventos</h4>
+            <p>
+              Nos gusta probar ideas frescas y usar tecnología sencilla para que encuentres fácilmente lo que te gusta.
+            </p>
+          </div>
+          <div class="values-card">
+            <h3>ACCESIBILIDAD</h3>
+            <div class="values-card-img">
+              <img src="/images/accesibility.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Para todos, sin complicaciones</h4>
+            <p>
+              Queremos que cualquier persona, sin importar su edad o experiencia, pueda usar NextHappen y disfrutar de
+              las ferias de Lima.
+            </p>
+          </div>
+          <div class="values-card">
+            <h3>ENFOQUE EN LA COMUNIDAD</h3>
+            <div class="values-card-img">
+              <img src="/images/community.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Las personas primero</h4>
+            <p>
+              Escuchamos a emprendedores y público para crear herramientas útiles que realmente sirvan para conectar y
+              apoyar el talento local.
+            </p>
+          </div>
+          <div class="values-card">
+            <h3>CONFIANZA</h3>
+            <div class="values-card-img">
+              <img src="/images/confidence.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Información clara y real.</h4>
+            <p>
+              Nos aseguramos de que todos los datos de ferias, horarios y lugares sean veraces y estén actualizados para
+              que no te lleves sorpresas.
+            </p>
+          </div>
+          <div class="values-card">
+            <h3>COMPROMISO</h3>
+            <div class="values-card-img">
+              <img src=" " alt="Foto de Marco Nakasone">
+            </div>
+            <h4>Hecho para limeños, por limeños.</h4>
+            <p>
+              Amamos nuestra ciudad y trabajamos para apoyar a sus emprendedores, ferias y tradiciones, contributing a
+              que Lima sea cada vez más vibrante.
+            </p>
+          </div>
+        </div>
+        <button class="values-btn prev" onclick="moveValues(-1)"> &#10094;</button>
+        <button class="values-btn next" onclick="moveValues(1)"> &#10095;</button>
+      </div>
+    </section>
+    <section class="functions">
+      <h2>NUESTRAS FUNCIONES</h2>
+      <div class="functions-cards-container">
+        <div class="functions-cards-carousel" id="functionsCarousel">
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/interactive_map.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>MAPA INTERACTIVO</h3>
+            <p>
+              Encuentra ferias, food trucks y mercados cerca de ti con un mapa fácil de usar. Mira exactamente dónde
+              están y cómo llegar.
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/alerts.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>ALERTAS PERSONALIZADAS</h3>
+            <p>
+              Recibe notificaciones cuando haya ferias nuevas en tu distrito o de tus categorías favoritas. ¡Nunca más
+              te perderás nada!
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/save_favourites.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>FAVORITOS Y GUARDADOS</h3>
+            <p>
+              Guarda las ferias que te interesan y organízalas en tu perfil. Así siempre tendrás tu lista lista para
+              visitar.
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/profile.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>PERFIL PARA EMPRENDEDORES</h3>
+            <p>
+              Si eres emprendedor, publica tus ferias y stands fácilmente. Muestra tus productos y conecta con tu
+              público ideal.
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/search.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>BÚSQUEDA INTELIGENTE</h3>
+            <p>
+              Busca por distrito, fecha, categoría o incluso por nombre de emprendedor. Encuentra exactamente lo que te
+              gusta.
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/happi.png" alt="Happi" height="700px">
+            </div>
+            <h3>RECOMENDACIONES DE HAPPI</h3>
+            <p>
+              Nuestra llama Happi te sugiere ferias basadas en tus gustos y lo que has guardado antes. ¡Como un amigo
+              que conoce todos los secretos de Lima!
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/share.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>COMPARTIR CON AMIGOS</h3>
+            <p>
+              Invita a tus amigos a ferias o comparte eventos en redes sociales directamente desde la app. ¡Disfruta en
+              compañía!
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/mail.svg" alt="Foto de Marco Nakasone">
+            </div>
+            <h3>NEWSLETTER SEMANAL</h3>
+            <p>
+              Recibe cada semana en tu correo un resumen de las ferias más interesantes. Planifica tu fin de semana sin
+              esfuerzo.
+            </p>
+          </div>
+          <div class="functions-card">
+            <div class="values-card-img">
+              <img src="/images/like.svg" alt="Foto de Marco Nakasone" >
+            </div>
+            <h3>SISTEMA DE CALIFICACIONES</h3>
+            <p>
+              Deja tu opinión sobre las ferias que visitaste y ayuda a otros a descubrir las mejores experiencias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

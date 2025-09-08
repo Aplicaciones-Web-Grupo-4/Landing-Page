@@ -1,0 +1,486 @@
+body {
+  margin: 0;
+  background-color: #F5F5F0;
+
+}
+
+header {
+  background-color: #1e90ff;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  cursor: pointer;
+  z-index: 1000; /* asegurarse de que esté encima de otros elementos */
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #F5F5F0;
+  text-align: center;
+  font-size: 450px;
+  margin: 0;
+  margin-bottom: -300px; /* ajusta parecido a tu diseño original */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -250px; /* ajusta parecido a tu diseño original */
+}
+
+.hero-img img {
+  display: block;
+  margin: 0 auto;
+  height: 700px;
+  margin-top: -120px; /* ajusta parecido a tu diseño original */
+}
+
+.slogan {
+  font-family: "Roboto Mono", monospace;
+  font-size: 60px;
+  margin: -400px 0 0 13px; /* controla espacio sin usar bottom */
+  align-self: flex-start;
+}
+
+.info {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  width: 600px;
+  text-align: left;
+  margin: -400px -55px 0 auto; /* pegado a la derecha */
+}
+
+.register-btn{
+  width: 600px;
+  text-align: left;
+  margin: -200px -55px 0 auto; /* pegado a la derecha */
+}
+
+.register {
+  display: inline-block;
+  background-color: #0D315D;
+  color: #F5F5F0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:hover.register {
+  background-color: #F5F5F0;
+  color: #0D315D;
+  cursor: pointer;
+}
+
+.burger-menu-open {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 2px;
+  background-color: #0D315D;
+  gap: 0.6rem; /* le faltaba unidad */
+  top: 4.5rem;    /* separación desde arriba */
+  right: 4rem;  /* lo manda a la derecha */
+  cursor: pointer;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.burger-menu-open div {
+  background-color: #F5F5F0;
+  height: 5px;
+  width: 100%;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: end;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1D1C1B;
+  padding: 3rem;
+  width: 500px;
+  height: 100%;
+  z-index: 1000; /* asegurarse de que esté encima de otros elementos */
+}
+
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block; 
+}
+
+.menu a:hover {
+  transform: scale(1.1); /* agranda solo esa palabra */
+}
+
+.menu li a{
+  color: #F5F5F0;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.burger-menu-close {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 20px; /* le faltaba unidad */
+  top: 4.5rem;    /* separación desde arriba */
+  right: 4rem;  /* lo manda a la derecha */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.burger-menu-close div {
+  background-color: #F5F5F0;
+  height: 5px;
+  width: 100%;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.burger-menu-close div:first-child {
+  transform: rotate(45deg);
+}
+
+.burger-menu-close div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+:hover.burger-menu-open {
+  background-color: #F5F5F0;
+}
+
+:hover.burger-menu-open div {
+  background-color: #0D315D;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 2rem auto;
+  overflow: hidden; /* oculta el desbordamiento */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0.1);
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  flex-shrink: 0; /* no se encoge */
+  transition: box-shadow 0.2s;
+  flex: 0 0 auto; /* no se estira */
+  scroll-snap-align: center; /* se alinea al centro al hacer scroll */
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #FAC638;
+  font-size: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.card h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.card p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #1D1C1B;
+}
+
+.btn {
+ position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f0f0f0; /* gris claro */
+  border: none;
+  border-radius: 50%; /* círculo */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #7d7d7d; /* gris oscuro para la flecha */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn.prev {
+  left: 1.25rem;
+}
+
+.btn.next {
+  right: 1.25rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  gap: 1rem; /* espacio entre columnas */
+  margin: 2rem auto;
+  justify-content: center;
+
+}
+
+.about-cards{
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0.1);
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+  width: 855px;
+  height: 475px;
+  text-align: center;
+  flex-shrink: 0; /* no se encoge */
+  transition: box-shadow 0.2s;
+  flex: 0 0 auto; /* no se estira */
+  scroll-snap-align: center; /* se alinea al centro al hacer scroll */
+}
+
+.about-cards h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #FAC638;
+  font-size: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.about-cards p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #1D1C1B;
+  text-align: left;
+  padding: 20px;
+} 
+
+.about-img img{
+  max-width: 100%;
+  position: inherit;
+}
+
+.about-cards:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.misision-vision-cards-container {
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  gap: 1rem; /* espacio entre columnas */
+  margin: 2rem auto;
+  justify-content: center;
+}
+
+.misision-vision-cards{
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0.1);
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+  width: 855px;
+  height: 475px;
+  text-align: center;
+  flex-shrink: 0; /* no se encoge */
+  transition: box-shadow 0.2s;
+  flex: 0 0 auto; /* no se estira */
+  scroll-snap-align: center; /* se alinea al centro al hacer scroll */
+}
+
+.misision-vision-cards h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #FAC638;
+  font-size: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.misision-vision-cards p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #1D1C1B;
+  text-align: left;
+  padding: 20px;
+} 
+
+.misision-vision-cards:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.values-cards-container {
+  position: relative;
+  margin: 2rem auto;
+  overflow: hidden; /* oculta el desbordamiento */
+}
+
+.values-cards-carousel {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  
+}
+
+.values h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.values-card {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0.1);
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+  width: 400px;
+  height: 550px;
+  text-align: center;
+  flex-shrink: 0; /* no se encoge */
+  transition: box-shadow 0.2s;
+  flex: 0 0 auto; /* no se estira */
+  scroll-snap-align: center; /* se alinea al centro al hacer scroll */
+}
+
+.values-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.values-card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #FAC638;
+  font-size: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.values-card-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.values-card h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.values-card p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #1D1C1B;
+}
+
+.values-btn {
+ position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f0f0f0; /* gris claro */
+  border: none;
+  border-radius: 50%; /* círculo */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #7d7d7d; /* gris oscuro para la flecha */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.values-btn.prev {
+  left: 1.25rem;
+}
+
+.values-btn.next {
+  right: 1.25rem;
+}
