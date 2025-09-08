@@ -78,7 +78,7 @@ header {
   transition: background-color 0.3s, color 0.3s;
 }
 
-:hover.register {
+.register:hover {
   background-color: #F5F5F0;
   color: #0D315D;
   cursor: pointer;
@@ -580,6 +580,131 @@ header {
   right: 1.25rem;
 }
 
+footer {
+  background-color: #1D1C1B;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-content h1 {
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #F5F5F0;
+  text-align: left;
+  font-size: 100px;
+  margin: 0;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.footer-content h3 {
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #F5F5F0;
+  text-align: left;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.contact-btn{
+  position: relative;
+  width: 600px;
+  text-align: left;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.contact-us {
+  display: inline-block;
+  background-color: #1D1C1B;
+  color: #F5F5F0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 2px solid #F5F5F0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-us:hover {
+  background-color: #F5F5F0;
+  color: #1D1C1B;
+  cursor: pointer;
+}
+
+.sections,
+.social-media,
+.contact {
+  position: relative;
+  list-style: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.sections-links p, .social-media-links p, .contact-links p {
+  color: #F5F5F0;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.sections li a, .social-media li a, .contact li a {
+  color: #F5F5F0;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+
+.rigths {
+  color: #F5F5F0;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 10px;
+  position: relative;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;  /* centra todo horizontal */
+  gap: 4rem;                /* espacio entre columnas */
+  color: #F5F5F0;
+  
+}
+
+.footer-links-wrapper {
+  display: flex;
+  align-items: flex-start; /* 👈 los alinea arriba, a la misma altura */
+  justify-content: space-between; /* botón a la izq, links a la der */
+  gap: 4rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.25rem;
+  margin-top: -100px;
+}
+
+
 @media (max-width: 600px) {
   .title {
     font-size: 80px;
@@ -640,7 +765,8 @@ header {
   }
 }
 
-/* 💻 Tablets (601px – 1024px) */
+
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .title {
     font-size: 200px;
