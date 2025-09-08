@@ -484,3 +484,212 @@ header {
 .values-btn.next {
   right: 1.25rem;
 }
+
+.functions-cards-container {
+  position: relative;
+  margin: 2rem auto;
+  overflow: hidden; /* oculta el desbordamiento */
+}
+
+.functions-cards-carousel {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  
+}
+
+.functions h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.functions-card {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0.1);
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+  width: 400px;
+  height: 550px;
+  text-align: center;
+  flex-shrink: 0; /* no se encoge */
+  transition: box-shadow 0.2s;
+  flex: 0 0 auto; /* no se estira */
+  scroll-snap-align: center; /* se alinea al centro al hacer scroll */
+}
+
+.functions-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.functions-card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: #FAC638;
+  font-size: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.functions-card-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.functions-card h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.functions-card p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #1D1C1B;
+}
+
+.functions-btn {
+ position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f0f0f0; /* gris claro */
+  border: none;
+  border-radius: 50%; /* círculo */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #7d7d7d; /* gris oscuro para la flecha */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.functions-btn.prev {
+  left: 1.25rem;
+}
+
+.functions-btn.next {
+  right: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 80px;
+    margin-bottom: -40px;
+  }
+
+  .hero-img img {
+    height: 250px;
+    margin-top: -40px;
+  }
+
+  .slogan {
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 16px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .register-btn {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .register {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .card,
+  .values-card,
+  .functions-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .about,
+  .misision-vision-cards-container {
+    flex-direction: column;
+  }
+
+  .about-cards,
+  .misision-vision-cards {
+    width: 90%;
+    height: auto;
+  }
+
+  .values-card-img img,
+  .functions-card-img img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* 💻 Tablets (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 200px;
+    margin-bottom: -120px;
+  }
+
+  .hero-img img {
+    height: 400px;
+  }
+
+  .slogan {
+    font-size: 35px;
+    margin: 0 auto;
+  }
+
+  .info {
+    font-size: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .register-btn {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .card,
+  .values-card,
+  .functions-card {
+    width: 300px;
+    height: auto;
+  }
+
+  .about,
+  .misision-vision-cards-container {
+    flex-wrap: wrap;
+  }
+
+  .about-cards,
+  .misision-vision-cards {
+    width: 90%;
+    height: auto;
+  }
+
+  .values-card-img img,
+  .functions-card-img img {
+    width: 220px;
+    height: 220px;
+  }
+}
