@@ -42,4 +42,5 @@ function setupCarousel(carouselId, cardSelector, containerSelector) {
 // Usar para cada carrusel
 const moveMain = setupCarousel("carousel", ".card", ".carousel-container");
 const moveValues = setupCarousel("valuesCarousel", ".values-card", ".values-cards-container");
+const moveFunctions = setupCarousel("functionsCarousel", ".functions-card", ".functions-cards-container");
 
