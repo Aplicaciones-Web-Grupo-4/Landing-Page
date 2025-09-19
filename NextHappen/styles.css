@@ -26,43 +26,72 @@ header {
     font-weight: 400;
     color: #F5F5F0;
     text-align: center;
-    font-size: 450px;
-    margin: 0;
-    margin-bottom: -300px;
+    font-size: 25vw;
+    margin: 80px 0 0 0;
 }
 
 .hero-content {
     display: flex;
-    flex-direction: column;
-    margin-top: -250px;
+    align-items: flex-end;
+    /* alinea bases */
+    justify-content: space-between;
+    /* separa columnas */
+    margin: 1rem;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
 }
 
-.hero-img img {
+.hero-left {
+    display: flex;
+    align-items: flex-end;
+     margin: 1rem;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+}
+
+.hero-right {
+    display: flex;
+    align-items: flex-end;
+     margin: 1rem;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+}
+
+.hero-content .hero-center .happi {
     display: block;
-    margin: 0 auto;
-    height: 700px;
-    margin-top: -120px;
+    height: 43rem;
+    margin-top: -15rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .slogan {
     font-family: "Roboto Mono", monospace;
     font-size: 60px;
-    margin: -400px 0 0 13px;
-    align-self: flex-start;
+    line-height: 1.05;
+    margin: 0;
 }
 
 .info {
     font-family: "Roboto Mono", monospace;
     font-size: 30px;
-    width: 600px;
     text-align: left;
-    margin: -400px -55px 0 auto;
 }
 
 .register-btn {
-    width: 600px;
-    text-align: left;
-    margin: -200px -55px 0 auto;
+    position: absolute;
+    right: 11rem;     /* distancia al borde derecho */
+    bottom: 4rem;    /* distancia desde abajo, ajústalo a gusto */
+    width: auto;
+
+}
+
+.hero {
+    width: 100%;
 }
 
 .register {
@@ -106,6 +135,11 @@ header {
     width: 100%;
     transition: all .5s;
     transform-origin: left;
+}
+
+#lang-toggle {
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .nav {
@@ -156,7 +190,7 @@ header {
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-size: 100px;
+    font-size: 520%;
 }
 
 .burger-menu-close {
@@ -358,8 +392,8 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0.1);
     padding: 1.5rem 1rem;
     margin: 0 1rem;
-    width: 855px;
-    height: 475px;
+    width: 45%;
+    height: 60%;
     text-align: center;
     flex-shrink: 0;
     transition: box-shadow 0.2s;
@@ -704,29 +738,6 @@ footer p {
 @media (max-width: 1024px) {
 
     /* Hero Section */
-    .title {
-        font-size: 15vw;
-        margin-bottom: -10vw;
-    }
-
-    .hero-img img {
-        height: 60vw;
-        max-width: 90%;
-        margin-top: -10vw;
-    }
-
-    .slogan {
-        font-size: 3vw;
-        margin: 5vw auto 0;
-        text-align: center;
-    }
-
-    .info {
-        font-size: 2.5vw;
-        width: 90%;
-        margin: 3vw auto;
-        text-align: center;
-    }
 
     .register-btn {
         width: 90%;
@@ -734,23 +745,39 @@ footer p {
         text-align: center;
     }
 
+    .slogan {
+        font-size: 4vw;
+    }
+
+    .info {
+        font-size: 2vw;
+    }
+
+    .hero-content img {
+        width: 50%;
+        height: auto;
+    }
+
+
     .register {
         font-size: 2vw;
     }
 
     /* General Layout */
-    .about, .misision-vision-cards-container {
+    .about,
+    .misision-vision-cards-container {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
 
-    .about-cards, .misision-vision-cards {
+    .about-cards,
+    .misision-vision-cards {
         width: 90%;
         height: auto;
         margin: 0;
     }
-    
+
     .about-img img {
         margin-top: 1rem;
         width: 90%;
@@ -758,11 +785,15 @@ footer p {
     }
 
     /* Carousels */
-    .carousel-container, .values-cards-container, .functions-cards-container {
+    .carousel-container,
+    .values-cards-container,
+    .functions-cards-container {
         padding: 0;
     }
-    
-    .carousel, .values-cards-carousel, .functions-cards-carousel {
+
+    .carousel,
+    .values-cards-carousel,
+    .functions-cards-carousel {
         -webkit-overflow-scrolling: touch;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -770,7 +801,9 @@ footer p {
         margin-bottom: 1rem;
     }
 
-    .card, .values-card, .functions-card {
+    .card,
+    .values-card,
+    .functions-card {
         width: 80vw;
         height: auto;
         flex-shrink: 0;
@@ -778,8 +811,11 @@ footer p {
         scroll-snap-align: center;
     }
 
-    .btn, .values-btn, .functions-btn {
-        display: none; /* Hide buttons for touch-based scrolling */
+    .btn,
+    .values-btn,
+    .functions-btn {
+        display: none;
+        /* Hide buttons for touch-based scrolling */
     }
 
     /* Footer */
@@ -787,9 +823,12 @@ footer p {
         padding: 2rem 1rem;
     }
 
-    .footer-content h1, .footer-content h3,
+    .footer-content h1,
+    .footer-content h3,
     .contact-btn,
-    .sections-links p, .social-media-links p, .contact-links p,
+    .sections-links p,
+    .social-media-links p,
+    .contact-links p,
     .rigths {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -805,7 +844,7 @@ footer p {
         font-size: 4vw;
         padding-top: 1rem;
     }
-    
+
     .contact-btn {
         width: 100%;
         text-align: center;
@@ -821,7 +860,7 @@ footer p {
         align-items: center;
         gap: 2rem;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -830,5 +869,65 @@ footer p {
 
     .footer-logo {
         display: none;
+    }
+}
+
+/* ==== Mobile: carouseles con botones, sin barra horizontal ==== */
+@media (max-width: 1024px) {
+
+    /* contenedores: esconden desbordes */
+    .carousel-container,
+    .values-cards-container,
+    .functions-cards-container {
+        overflow: hidden;
+        /* <— importante */
+        padding: 0;
+        position: relative;
+        /* asegura posicionamiento correcto de flechas */
+    }
+
+    /* pistas: nada de scroll horizontal ni snap; se mueve con translateX (JS) */
+    .carousel,
+    .values-cards-carousel,
+    .functions-cards-carousel {
+        overflow: visible;
+        /* no genera barra */
+        scroll-snap-type: none;
+        /* desactiva snap táctil */
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        /* oculta cualquier scrollbar “terco” por compatibilidad */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .carousel::-webkit-scrollbar,
+    .values-cards-carousel::-webkit-scrollbar,
+    .functions-cards-carousel::-webkit-scrollbar {
+        display: none;
+        /* WebKit */
+    }
+
+    /* tarjetas: tamaño fluido */
+    .card,
+    .values-card,
+    .functions-card {
+        width: 82vw;
+        /* ancho cómodo en móvil */
+        height: auto;
+        flex-shrink: 0;
+        margin: 0 .75rem;
+        /* espaciado lateral */
+        scroll-snap-align: unset;
+    }
+
+    /* ¡mostrar flechas en móvil! */
+    .btn,
+    .values-btn,
+    .functions-btn {
+        display: flex;
+        /* <— antes estaban ocultas */
+        z-index: 3;
     }
 }

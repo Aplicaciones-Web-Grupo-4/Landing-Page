@@ -14,364 +14,424 @@
 <body>
   <header class="header">
     <div class="hero">
-      <h1 class="title">NEXTHAPPEN</h1>
       <div class="logo">
-        <img src="/NextHappen/images/happi_logo.png" alt="Happi logo" height="150px" href="#">
+        <a href="#principal">
+          <img src="/NextHappen/images/happi_logo.png" alt="Happi logo" height="150" data-i18n-alt="alt.happiLogo">
+        </a>
       </div>
-      <button class="burger-menu-open" id="open">
+    </div>
+
+    <button class="burger-menu-open" id="open">
+      <div></div>
+      <div></div>
+    </button>
+
+    <nav class="nav" id="nav">
+      <button class="burger-menu-close" id="close">
         <div></div>
         <div></div>
       </button>
-      <nav class="nav" id="nav">
-        <button class="burger-menu-close" id="close">
-          <div></div>
-          <div></div>
-        </button>
-        <ul class="menu">
-          <li><a href="#">PRINCIPAL</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">ACERCA</a></li>
-          <li><a href="#">CARACTERITICAS</a></li>
-          <li><a href="#">INGLES</a></li>
-        </ul>
-      </nav>
+      <ul class="menu">
+        <li><a href="#principal" data-i18n="nav.principal">PRINCIPAL</a></li>
+        <li><a href="#about-us" data-i18n="nav.nosotros">NOSOTROS</a></li>
+        <li><a href="#about" data-i18n="nav.acerca">ACERCA</a></li>
+        <li><a href="#characteristics" data-i18n="nav.caracteristicas">CARACTERÍSTICAS</a></li>
+        <li><a id="lang-toggle" data-i18n="nav.idioma">ENGLISH</a></li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <h1 class="title" id="principal" data-i18n="hero.title">NEXTHAPPEN</h1>
+
       <div class="hero-content">
-        <div class="hero-img">
-          <img src="/NextHappen/images/happi.png" alt="Happi" height="700px">
+        <div class="hero-left">
+          <h2 class="slogan" data-i18n-html="hero.slogan">
+            Descubre lo que <br>
+            pasa, vive lo<br>
+            que viene
+          </h2>
         </div>
-        <div class="hero-text">
-          <h2 class="slogan">Descubre lo que <br>
-            pasa, vive lo <br>
-            que viene</h2>
+
+        <div class="hero-center">
+          <img class="happi" src="/NextHappen/images/happi.png" alt="Happi" data-i18n-alt="alt.happi">
         </div>
-        <div class="hero-info">
-          <p class="info">
-            La forma más divertida de <br>
-            enterarte de ferias y eventos <br>
-            en línea. Todo lo que pasa, <br>
+
+        <div class="hero-right">
+          <p class="info" data-i18n-html="hero.info">
+            La forma más divertida de<br>
+            enterarte de ferias y eventos<br>
+            en línea. Todo lo que pasa,<br>
             en un solo lugar.
           </p>
         </div>
+
         <div class="register-btn">
-          <a href="#" class="register">REGISTRATE AHORA →</a>
+          <a href="#" class="register" data-i18n="cta.registrate">REGÍSTRATE AHORA →</a>
+          <div></div>
         </div>
       </div>
     </div>
   </header>
+
   <main>
-    <section class="about-us">
-      <h2>NEOVENT</h2>
+    <section class="about-us" id="about-us">
+      <h2 data-i18n="aboutus.titulo">NEOVENT</h2>
+
       <div class="carousel-container">
         <div class="carousel" id="carousel">
+          <!-- MARCO -->
           <div class="card">
             <h3>MARCO NAKASONE</h3>
             <div class="card-img">
-              <img src="/NextHappen/images/marco.jpg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/marco_nakasone.jpg" alt="Foto de Marco Nakasone" data-i18n-alt="alt.team.marco">
             </div>
-            <h4>Desarrollador fullstack en formación</h4>
-            <p>
+            <h4 data-i18n="team.marco.rol">Desarrollador fullstack en formación</h4>
+            <p data-i18n="team.marco.desc">
               Curioso y con muchas ganas de aprender. Le gusta participar en todas las etapas del desarrollo y aportar
               ideas nuevas al equipo.
             </p>
           </div>
+
+          <!-- BILLY -->
           <div class="card">
-            <h3>MARCO NAKASONE</h3>
+            <h3>BILLY RUIZ</h3>
             <div class="card-img">
-              <img src="/NextHappen/images/billy.jpg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/billy_ruiz.jpg" alt="Foto de Billy Ruiz" data-i18n-alt="alt.team.billy">
             </div>
-            <h4>Desarrollador móvil</h4>
-            <p>
+            <h4 data-i18n="team.billy.rol">Desarrollador móvil</h4>
+            <p data-i18n="team.billy.desc">
               Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
               más rápidas, útiles y accesibles.
             </p>
           </div>
+
+          <!-- JOSE PAREDES -->
           <div class="card">
-            <h3>MARCO NAKASONE</h3>
+            <h3>JOSE PAREDES</h3>
             <div class="card-img">
-              <img src="/NextHappen/images/jose.jpg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/jose_paredes.jpg" alt="Foto de Jose Paredes" data-i18n-alt="alt.team.josep">
             </div>
-            <h4>Desarrollador móvil</h4>
-            <p>
-              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
-              más rápidas, útiles y accesibles.
+            <h4 data-i18n="team.josep.rol">Diseñador y desarrollador front-end</h4>
+            <p data-i18n="team.josep.desc">
+              Apasionado por el diseño y la experiencia del usuario. Le gusta
+              crear interfaces limpias y que sean fáciles de usar.
             </p>
           </div>
+
+          <!-- PABLO MARTINEZ -->
           <div class="card">
-            <h3>MARCO NAKASONE</h3>
+            <h3>PABLO MARTINEZ</h3>
             <div class="card-img">
-              <img src="persona2.jpg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/pablo_martinez.jpg" alt="Foto de Pablo Martinez" data-i18n-alt="alt.team.pablo">
             </div>
-            <h4>Desarrollador móvil</h4>
-            <p>
-              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
-              más rápidas, útiles y accesibles.
+            <h4 data-i18n="team.pablo.rol">Líder del equipo</h4>
+            <p data-i18n="team.pablo.desc">
+              Estudiante con gusto por la gestión de proyectos y el desarrollo
+              backend. Siempre está motivando al grupo y buscando soluciones a
+              los desafíos del equipo.
             </p>
           </div>
+
+          <!-- JOSE CHIRITO -->
           <div class="card">
-            <h3>MARCO NAKASONE</h3>
+            <h3>JOSE CHIRITO</h3>
             <div class="card-img">
-              <img src="persona2.jpg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/jose_chirito.jpg" alt="Foto de Jose Chirito" data-i18n-alt="alt.team.josec">
             </div>
-            <h4>Desarrollador móvil</h4>
-            <p>
-              Interesado en el desarrollo de apps para celulares. Siempre está buscando formas de hacer las aplicaciones
-              más rápidas, útiles y accesibles.
+            <h4 data-i18n="team.josec.rol">Especialista en bases de datos y seguridad</h4>
+            <p data-i18n="team.josec.desc">
+              Le interesa todo lo relacionado con la protección de datos y el
+              manejo eficiente de la información. Siempre busca asegurar que
+              el sistema sea confiable y seguro.
             </p>
           </div>
         </div>
+
         <button class="btn prev" onclick="moveMain(-1)"> &#10094;</button>
         <button class="btn next" onclick="moveMain(1)"> &#10095;</button>
       </div>
     </section>
-    <section class="about">
+
+    <section class="about" id="about">
       <div class="about-img">
-        <img src="/NextHappen/images/happi.png" alt="Happi" height="700px">
+        <img src="/NextHappen/images/happi.png" alt="Happi" height="700px" data-i18n-alt="alt.happi">
       </div>
       <div class="about-cards">
-        <h3>NUESTRA ESENCIA</h3>
-        <p>NextHappen es el radar esencial que conecta a los limeños con la vibrante escena de ferias y emprendimientos
+        <h3 data-i18n="about.esenciaTitulo">NUESTRA ESENCIA</h3>
+        <p data-i18n="about.esenciaTexto">
+          NextHappen es el radar esencial que conecta a los limeños con la vibrante escena de ferias y emprendimientos
           de la ciudad, guiándolos de manera personalizada y cercana a través de Happi, su llama mascota, para que nunca
-          más se pierdan una experiencia gastronómica o artística cerca de ellos.</p>
+          más se pierdan una experiencia gastronómica o artística cerca de ellos.
+        </p>
         <div class="essence-img">
-          <img src="/NextHappen/images/essence.svg" alt="Esencia" height="300px">
+          <img src="/NextHappen/images/essence.svg" alt="Esencia" height="300px" data-i18n-alt="alt.esencia">
         </div>
       </div>
     </section>
+
     <section class="misision-vision">
       <div class="misision-vision-cards-container">
 
         <div class="misision-vision-cards">
-          <h3>MISIÓN</h3>
-          <p>Impulsar y visibilizar el ecosistema emprendedor de Lima, facilitando un encuentro significativo entre
+          <h3 data-i18n="mv.misionTitulo">MISIÓN</h3>
+          <p data-i18n="mv.misionTexto">
+            Impulsar y visibilizar el ecosistema emprendedor de Lima, facilitando un encuentro significativo entre
             creadores y comunidad. Buscamos democratizar el acceso a las ferias y mercados de la ciudad, simplificando
             su
             descubrimiento a través de tecnología intuitiva y un enfoque humano, para así fortalecer la economía local y
-            enriquecer la vida cultural de todos los limeños.</p>
+            enriquecer la vida cultural de todos los limeños.
+          </p>
           <div class="mission-img">
-            <img src="/NextHappen/images/mission.svg" alt="Esencia" height="300px">
+            <img src="/NextHappen/images/mission.svg" alt="Esencia" height="300px" data-i18n-alt="alt.mision">
           </div>
         </div>
+
         <div class="misision-vision-cards">
-          <h3>VISIÓN</h3>
-          <p>Ser la plataforma de referencia y comunidad indispensable que define y conecta la escena de emprendimiento
+          <h3 data-i18n="mv.visionTitulo">VISIÓN</h3>
+          <p data-i18n="mv.visionTexto">
+            Ser la plataforma de referencia y comunidad indispensable que define y conecta la escena de emprendimiento
             y
             ferias de Lima, donde cada limeño descubra automáticamente experiencias auténticas a su alrededor y todo
             emprendedor encuentre su audiencia ideal, consolidando así a NextHappen y a Happi, nuestra llama,
-            como símbolos de conexión, descubrimiento y alegría en la ciudad.</p>
+            como símbolos de conexión, descubrimiento y alegría en la ciudad.
+          </p>
           <div class="vision-img">
-            <img src="/NextHappen/images/vision.svg" alt="Esencia" height="300px">
+            <img src="/NextHappen/images/vision.svg" alt="Esencia" height="300px" data-i18n-alt="alt.vision">
           </div>
         </div>
+
       </div>
     </section>
+
     <section class="values">
-      <h2>NUESTROS VALORES</h2>
+      <h2 data-i18n="values.titulo">NUESTROS VALORES</h2>
+
       <div class="values-cards-container">
         <div class="values-cards-carousel" id="valuesCarousel">
           <div class="values-card">
-            <h3>INNOVACIÓN</h3>
+            <h3 data-i18n="values.innovacion.titulo">INNOVACIÓN</h3>
             <div class="values-card-img">
-              <img src="/NextHappen/images/innovation.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/innovation.svg" alt="Innovación" data-i18n-alt="alt.values.innovation">
             </div>
-            <h4>Formas creativas de conectarnos con eventos</h4>
-            <p>
+            <h4 data-i18n="values.innovacion.sub">Formas creativas de conectarnos con eventos</h4>
+            <p data-i18n="values.innovacion.texto">
               Nos gusta probar ideas frescas y usar tecnología sencilla para que encuentres fácilmente lo que te gusta.
             </p>
           </div>
+
           <div class="values-card">
-            <h3>ACCESIBILIDAD</h3>
+            <h3 data-i18n="values.accesibilidad.titulo">ACCESIBILIDAD</h3>
             <div class="values-card-img">
-              <img src="/NextHappen/images/accesibility.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/accesibility.svg" alt="Accesibilidad" data-i18n-alt="alt.values.accessibility">
             </div>
-            <h4>Para todos, sin complicaciones</h4>
-            <p>
+            <h4 data-i18n="values.accesibilidad.sub">Para todos, sin complicaciones</h4>
+            <p data-i18n="values.accesibilidad.texto">
               Queremos que cualquier persona, sin importar su edad o experiencia, pueda usar NextHappen y disfrutar de
               las ferias de Lima.
             </p>
           </div>
+
           <div class="values-card">
-            <h3>ENFOQUE EN LA COMUNIDAD</h3>
+            <h3 data-i18n="values.comunidad.titulo">ENFOQUE EN LA COMUNIDAD</h3>
             <div class="values-card-img">
-              <img src="/NextHappen/images/community.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/community.svg" alt="Enfoque en la comunidad" data-i18n-alt="alt.values.community">
             </div>
-            <h4>Las personas primero</h4>
-            <p>
+              <h4 data-i18n="values.comunidad.sub">Las personas primero</h4>
+            <p data-i18n="values.comunidad.texto">
               Escuchamos a emprendedores y público para crear herramientas útiles que realmente sirvan para conectar y
               apoyar el talento local.
             </p>
           </div>
+
           <div class="values-card">
-            <h3>CONFIANZA</h3>
+            <h3 data-i18n="values.confianza.titulo">CONFIANZA</h3>
             <div class="values-card-img">
-              <img src="/NextHappen/images/confidence.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/confidence.svg" alt="Confianza" data-i18n-alt="alt.values.confidence">
             </div>
-            <h4>Información clara y real.</h4>
-            <p>
+            <h4 data-i18n="values.confianza.sub">Información clara y real.</h4>
+            <p data-i18n="values.confianza.texto">
               Nos aseguramos de que todos los datos de ferias, horarios y lugares sean veraces y estén actualizados para
               que no te lleves sorpresas.
             </p>
           </div>
+
           <div class="values-card">
-            <h3>COMPROMISO</h3>
+            <h3 data-i18n="values.compromiso.titulo">COMPROMISO</h3>
             <div class="values-card-img">
-              <img src="/NextHappen/images/commitment.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/commitment.svg" alt="Compromiso" data-i18n-alt="alt.values.commitment">
             </div>
-            <h4>Hecho para limeños, por limeños.</h4>
-            <p>
+            <h4 data-i18n="values.compromiso.sub">Hecho para limeños, por limeños.</h4>
+            <p data-i18n="values.compromiso.texto">
               Amamos nuestra ciudad y trabajamos para apoyar a sus emprendedores, ferias y tradiciones, contributing a
               que Lima sea cada vez más vibrante.
             </p>
           </div>
         </div>
+
         <button class="values-btn prev" onclick="moveValues(-1)"> &#10094;</button>
         <button class="values-btn next" onclick="moveValues(1)"> &#10095;</button>
       </div>
     </section>
-    <section class="functions">
-      <h2>NUESTRAS FUNCIONES</h2>
+
+    <section class="functions" id="characteristics">
+      <h2 data-i18n="funciones.titulo">NUESTRAS FUNCIONES</h2>
+
       <div class="functions-cards-container">
         <div class="functions-cards-carousel" id="functionsCarousel">
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/interactive_map.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/interactive_map.svg" alt="Mapa interactivo" data-i18n-alt="alt.func.mapa">
             </div>
-            <h3>MAPA INTERACTIVO</h3>
-            <p>
+            <h3 data-i18n="funciones.mapa.titulo">MAPA INTERACTIVO</h3>
+            <p data-i18n="funciones.mapa.texto">
               Encuentra ferias, food trucks y mercados cerca de ti con un mapa fácil de usar. Mira exactamente dónde
               están y cómo llegar.
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/alerts.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/alerts.svg" alt="Alertas" data-i18n-alt="alt.func.alertas">
             </div>
-            <h3>ALERTAS PERSONALIZADAS</h3>
-            <p>
+            <h3 data-i18n="funciones.alertas.titulo">ALERTAS PERSONALIZADAS</h3>
+            <p data-i18n="funciones.alertas.texto">
               Recibe notificaciones cuando haya ferias nuevas en tu distrito o de tus categorías favoritas. ¡Nunca más
               te perderás nada!
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/save_favourites.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/save_favourites.svg" alt="Guardar favoritos" data-i18n-alt="alt.func.favoritos">
             </div>
-            <h3>FAVORITOS Y GUARDADOS</h3>
-            <p>
+            <h3 data-i18n="funciones.favoritos.titulo">FAVORITOS Y GUARDADOS</h3>
+            <p data-i18n="funciones.favoritos.texto">
               Guarda las ferias que te interesan y organízalas en tu perfil. Así siempre tendrás tu lista lista para
               visitar.
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/profile.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/profile.svg" alt="Perfil" data-i18n-alt="alt.func.perfil">
             </div>
-            <h3>PERFIL PARA EMPRENDEDORES</h3>
-            <p>
+            <h3 data-i18n="funciones.perfil.titulo">PERFIL PARA EMPRENDEDORES</h3>
+            <p data-i18n="funciones.perfil.texto">
               Si eres emprendedor, publica tus ferias y stands fácilmente. Muestra tus productos y conecta con tu
               público ideal.
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/search.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/search.svg" alt="Búsqueda" data-i18n-alt="alt.func.busqueda">
             </div>
-            <h3>BÚSQUEDA INTELIGENTE</h3>
-            <p>
+            <h3 data-i18n="funciones.busqueda.titulo">BÚSQUEDA INTELIGENTE</h3>
+            <p data-i18n="funciones.busqueda.texto">
               Busca por distrito, fecha, categoría o incluso por nombre de emprendedor. Encuentra exactamente lo que te
               gusta.
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/happi_logo.png" alt="Happi">
+              <img src="/NextHappen/images/happi_logo.png" alt="Happi" data-i18n-alt="alt.func.happiLogo">
             </div>
-            <h3>RECOMENDACIONES DE HAPPI</h3>
-            <p>
+            <h3 data-i18n="funciones.happi.titulo">RECOMENDACIONES DE HAPPI</h3>
+            <p data-i18n="funciones.happi.texto">
               Nuestra llama Happi te sugiere ferias basadas en tus gustos y lo que has guardado antes. ¡Como un amigo
               que conoce todos los secretos de Lima!
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/share.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/share.svg" alt="Compartir" data-i18n-alt="alt.func.compartir">
             </div>
-            <h3>COMPARTIR CON AMIGOS</h3>
-            <p>
+            <h3 data-i18n="funciones.compartir.titulo">COMPARTIR CON AMIGOS</h3>
+            <p data-i18n="funciones.compartir.texto">
               Invita a tus amigos a ferias o comparte eventos en redes sociales directamente desde la app. ¡Disfruta en
               compañía!
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/mail.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/mail.svg" alt="Correo" data-i18n-alt="alt.func.mail">
             </div>
-            <h3>NEWSLETTER SEMANAL</h3>
-            <p>
+            <h3 data-i18n="funciones.newsletter.titulo">NEWSLETTER SEMANAL</h3>
+            <p data-i18n="funciones.newsletter.texto">
               Recibe cada semana en tu correo un resumen de las ferias más interesantes. Planifica tu fin de semana sin
               esfuerzo.
             </p>
           </div>
+
           <div class="functions-card">
             <div class="values-card-img">
-              <img src="/NextHappen/images/like.svg" alt="Foto de Marco Nakasone">
+              <img src="/NextHappen/images/like.svg" alt="Me gusta" data-i18n-alt="alt.func.like">
             </div>
-            <h3>SISTEMA DE CALIFICACIONES</h3>
-            <p>
+            <h3 data-i18n="funciones.calificaciones.titulo">SISTEMA DE CALIFICACIONES</h3>
+            <p data-i18n="funciones.calificaciones.texto">
               Deja tu opinión sobre las ferias que visitaste y ayuda a otros a descubrir las mejores experiencias.
             </p>
           </div>
         </div>
+
         <button class="functions-btn prev" onclick="moveFunctions(-1)"> &#10094;</button>
         <button class="functions-btn next" onclick="moveFunctions(1)"> &#10095;</button>
       </div>
     </section>
+
     <footer>
       <div class="footer-content">
-        <h1>NEXTHAPPEN</h1>
-        <h3>Optimiza tu restaurante con <br>
-          inteligencia y frescura</h3>
+        <h1 data-i18n="footer.brand">NEXTHAPPEN</h1>
+        <h3 data-i18n-html="footer.claim">Optimiza tu restaurante con <br> inteligencia y frescura</h3>
+
         <div class="footer-links-wrapper">
-          <div class="contact-btn">
-            <a href="#" class="contact-us">CONTÁCTANOS</a>
-          </div>
           <div class="footer-links">
 
             <div class="sections-links">
-              <p>SECCIONES</p>
+              <p data-i18n="footer.sectionsTitle">SECCIONES</p>
               <ul class="sections">
-                <li><a href="#">PRINCIPAL</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">ACERCA</a></li>
-                <li><a href="#">CARACTERÍSTICAS</a></li>
+                <li><a href="#principal" data-i18n="footer.sections.principal">PRINCIPAL</a></li>
+                <li><a href="#about-us" data-i18n="footer.sections.nosotros">NOSOTROS</a></li>
+                <li><a href="#about" data-i18n="footer.sections.acerca">ACERCA</a></li>
+                <li><a href="#characteristics" data-i18n="footer.sections.caracteristicas">CARACTERÍSTICAS</a></li>
               </ul>
             </div>
+
             <div class="social-media-links">
-              <p>REDES SOCIALES</p>
+              <p data-i18n="footer.socialTitle">REDES SOCIALES</p>
               <ul class="social-media">
-                <li><a href="#">FACEBOOK</a></li>
-                <li><a href="#">TWITTER(X)</a></li>
-                <li><a href="#">INSTAGRAM</a></li>
+                <li><a href="https://www.facebook.com/" data-i18n="footer.social.facebook">FACEBOOK</a></li>
+                <li><a href="https://x.com." data-i18n="footer.social.twitter">TWITTER (X)</a></li>
+                <li><a href="https://www.instagram.com/" data-i18n="footer.social.instagram">INSTAGRAM</a></li>
               </ul>
             </div>
+
             <div class="contact-links">
-              <p>CONTACTÁNOS</p>
+              <p data-i18n="footer.contactTitle">CONTACTÁNOS</p>
               <ul class="contact">
-                <li><a href="#">(01) 99-NEOVENT</a></li>
-                <li><a href="#">nexthappen@neovent.pe</a></li>
+                <li><a href="#" data-i18n="footer.contact.phone">(01) 99-NEOVENT</a></li>
+                <li><a href="#" data-i18n="footer.contact.mail">nexthappen@neovent.pe</a></li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
 
       <div class="footer-logo">
-        <img src="/NextHappen/images/happi_logo.png" alt="Happi logo" height="400px">
+        <img src="/NextHappen/images/happi_logo.png" alt="Happi logo" height="400px" data-i18n-alt="alt.happiLogo">
       </div>
 
-      <p class="rigths">© 2025 NEOVENT. TODOS LOS DERECHOS RESERVADOS.</p>
-      </div>
+      <p class="rigths" data-i18n="footer.rights">© 2025 NEOVENT. TODOS LOS DERECHOS RESERVADOS.</p>
     </footer>
   </main>
+
+  <!-- Carga de i18n y script principal -->
+  <script src="lang/es.js"></script>
+  <script src="lang/en.js"></script>
   <script src="script.js"></script>
 </body>
 
